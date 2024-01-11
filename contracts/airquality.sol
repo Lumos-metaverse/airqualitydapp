@@ -43,6 +43,10 @@ contract airquality {
         cityAQIentries.pop();
     }
 
+        function returncityAQLLength() public view returns (uint256) {
+        return cityAQIentries.length;
+    }
+
     // ** USER ONLY FUNCTIONS **
 
     // this function retrieves the AQI from the smart contract based on the entry made by the user
@@ -54,4 +58,3 @@ contract airquality {
         }
     }
 }
-
